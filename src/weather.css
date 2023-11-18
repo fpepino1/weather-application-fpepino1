@@ -26,6 +26,7 @@ footer {
   text-align: center;
   padding-top: 0px;
   margin-top: 0px;
+  font-family: Helvetica;
 }
 
 .current-city {
@@ -152,6 +153,7 @@ footer {
     padding-top: 0px;
     margin-top: 0px;
     font-weight: lighter;
+    font-family: Helvetica;
   }
 
   .search-city-input {
