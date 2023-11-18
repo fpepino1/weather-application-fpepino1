@@ -180,8 +180,8 @@ footer {
   }
 
   .submit-city:hover {
-    background-color: #e8f0fe;
-    color: #081f65;
+    color: #e8f0fe;
+    background-color: hsla(0, 0%, 20%, 0.5);
   }
 
   .current-weather {
