@@ -52,7 +52,6 @@ function refreshWeather(response) {
   currentDateElement.innerHTML = `${month} ${noDate} ${fullYear}`;
   let currentDayTimeElement = document.querySelector("#current-day-time");
   currentDayTimeElement.innerHTML = `${day} ${hour}:${minute}`;
-
 }
 
 function searchCity(city) {
