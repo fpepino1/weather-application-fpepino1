@@ -14,6 +14,9 @@ function refreshWeather(response) {
   let currentConditionElement = document.querySelector("#current-condition");
   currentConditionElement.innerHTML = response.data.condition.description;
 
+  let currentIconElement = document.querySelector("#current-temperature-icon");
+  currentIconElement.innerHTML = `<img src= "${response.data.condition.icon_url}"/>`;
+
   let currentDateElement = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
 
@@ -37,6 +40,10 @@ function refreshWeather(response) {
   let fullYear = date.getFullYear();
   let hour = date.getHours();
   let minute = date.getMinutes();
+
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
 
   let days = [
     "Sunday",

@@ -75,8 +75,7 @@ footer {
 }
 
 #current-temperature-icon {
-  padding-top: 9.5%;
-  font-size: 65px;
+  padding-top: 3.5%;
 }
 
 #current-temperature-value {
@@ -91,7 +90,6 @@ footer {
 #current-city {
   font-size: 38px;
 }
-
 .current-details {
   font-size: 16px;
   color: grey;
@@ -199,8 +197,7 @@ footer {
   }
 
   #current-temperature-icon {
-    font-size: 30px;
-    padding-top: 6%;
+    padding-top: 9%;
   }
 
   #current-temperature-value {
