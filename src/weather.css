@@ -1,13 +1,14 @@
 body {
-  background-color: black;
+  background-image: url(https://www.renderhub.com/raffyraffy/moon-lunar-landscape/moon-lunar-landscape-08.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
+  margin: 5% 5%;
 }
 
 section {
   font-family: Helvetica;
-  margin: 4% 10% 3% 10%;
+  margin: 3% 22% 0% 22%;
   border-radius: 24px;
   padding: 3% 5% 2.5% 5%;
   background-color: hsla(0, 0%, 50%, 0.5);
@@ -23,9 +24,15 @@ header {
 
 footer {
   text-align: center;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
-.search-city {
+.current-city {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.search-city-input {
   background-color: hsla(0, 0%, 100%, 0.5);
   border: none;
   color: white;
@@ -38,14 +45,17 @@ footer {
 .submit-city {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #395fa0;
+  background-color: hsla(0, 0%, 50%, 0.5);
   color: white;
   border: none;
   padding: 20px;
   line-height: 1;
-  border-radius: 5px;
+  border-radius: 6px;
 }
-
+.submit-city:hover {
+  color: #e8f0fe;
+  background-color: hsla(0, 0%, 20%, 0.5);
+}
 .current-weather {
   padding: 5% 5% 5% 5%;
   display: flex;
@@ -64,10 +74,10 @@ footer {
   padding-top: 5%;
 }
 
-.current-temperature-icon {
+/* .current-temperature-icon {
   padding-top: 9.5%;
   font-size: 65px;
-}
+} */
 .current-temperature-value {
   padding-top: 6%;
   font-size: 70px;
@@ -83,7 +93,7 @@ footer {
 }
 
 .current-details strong {
-  color: #926f87;
+  color: red;
 }
 
 #forecast-weather {
@@ -95,7 +105,7 @@ footer {
   justify-content: space-between;
   list-style-type: none;
   padding: 80px 50px 80px 50px;
-  border-radius: 12px;
+  border-radius: 18px;
   color: white;
   border-style: solid;
   border-color: hsla(0, 0%, 100%, 0.5);
@@ -105,20 +115,31 @@ footer {
   text-align: center;
   font-weight: lighter;
 }
+#forecast-weather li strong {
+  color: red;
+}
+
+#forecast-weather .next-day {
+  color: white;
+}
 
 @media (max-width: 950px) {
   body {
     background-color: black;
+    margin: 4% 5%;
   }
 
   section {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    margin: 4% 5% 4% 5%;
+    margin: 3% 10% 0% 10%;
     border-radius: 24px;
     background-color: hsla(0, 0%, 50%, 0.5);
-    padding: 5% 5% 2.5% 5%;
+    color: white;
+    border-style: solid;
+    border-color: hsla(0, 0%, 100%, 0.5);
+    padding: 5% 5% 0% 5%;
   }
 
   header {
@@ -127,28 +148,36 @@ footer {
   }
 
   footer {
-    margin: 0 auto;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-weight: lighter;
   }
 
-  .search-city {
+  .search-city-input {
     background-color: hsla(0, 0%, 100%, 0.5);
     border: none;
     color: white;
     font-size: 16px;
     padding: 20px;
-    width: 60%;
+    width: 50%;
     border-radius: 6px;
   }
 
   .submit-city {
     margin-left: 5px;
     font-size: 16px;
-    background-color: #395fa0;
+    background-color: hsla(0, 0%, 50%, 0.5);
     color: white;
     border: none;
     padding: 20px;
     line-height: 1;
-    border-radius: 5px;
+    border-radius: 6px;
+  }
+
+  .submit-city:hover {
+    background-color: #e8f0fe;
+    color: #081f65;
   }
 
   .current-weather {
@@ -169,43 +198,44 @@ footer {
     font-size: 30px;
   }
 
-  .current-temperature-icon {
+  /* .current-temperature-icon {
     font-size: 30px;
     padding-top: 6%;
-  }
+  } */
 
   .current-temperature-value {
     font-size: 30px;
   }
   .current-temperature-unit {
-    padding-top: 6%;
+    padding-top: 5%;
+    font-size: 25px;
   }
 
   .current-city {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .current-details {
     font-size: 14px;
+    color: grey;
   }
 
   .current-details strong {
-    color: #926f87;
-  }
-
-  #forecast-weather {
-    padding: 4% 0% 7.5% 0%;
-    margin-right: 7.5%;
+    color: RED;
   }
 
   #forecast-weather ul {
     display: flex;
     flex-direction: column;
+    padding: 10% 10%;
   }
 
   #forecast-weather li {
     list-style-type: none;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #forecast-weather li strong {
+    color: red;
   }
 }

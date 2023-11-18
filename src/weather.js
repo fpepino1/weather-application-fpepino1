@@ -4,11 +4,11 @@ function refreshWeather(response) {
   );
   let currentTemperature = response.data.temperature.current;
   let cityElement = document.querySelector("#current-city");
-  cityElement.innerHTML = response.data.city;
+  cityElement.innerHTML = response.data.city.toUpperCase();
   currentTemperatureElement.innerHTML = Math.round(currentTemperature);
 
   let currentDay = document.querySelector("#current-day");
-  let current 
+  let current;
 }
 
 function searchCity(city) {
