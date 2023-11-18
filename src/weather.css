@@ -119,6 +119,7 @@ footer {
 #forecast-weather li {
   text-align: center;
   font-weight: lighter;
+  padding-left: 5%;
 }
 #forecast-weather li strong {
   color: red;
