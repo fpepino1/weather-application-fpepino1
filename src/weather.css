@@ -1,7 +1,7 @@
 body {
   background-image: url(https://www.renderhub.com/raffyraffy/moon-lunar-landscape/moon-lunar-landscape-08.jpg);
   background-attachment: fixed;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 5% 5%;
 }
@@ -17,7 +17,7 @@ section {
   border-color: hsla(0, 0%, 100%, 0.5);
 }
 
-header {
+.current header {
   text-align: center;
   padding-top: 5%;
 }
@@ -34,6 +34,9 @@ footer {
   font-family: "Times New Roman", Times, serif;
 }
 
+#search-city-form {
+  text-align: center;
+}
 .search-city-input {
   background-color: hsla(0, 0%, 100%, 0.5);
   border: none;
@@ -41,7 +44,7 @@ footer {
   font-size: 16px;
   padding: 20px;
   width: 75%;
-  border-radius: 6px;
+  border-radius: 16.8px;
 }
 
 .submit-city {
@@ -51,8 +54,7 @@ footer {
   color: white;
   border: none;
   padding: 20px;
-  line-height: 1;
-  border-radius: 6px;
+  border-radius: 16.8px;
 }
 .submit-city:hover {
   color: #e8f0fe;
@@ -74,6 +76,7 @@ footer {
   display: flex;
   font-size: 45px;
   padding-top: 5%;
+  font-family: "Times New Roman";
 }
 
 /* .current-temperature-icon {
@@ -107,10 +110,10 @@ footer {
   justify-content: space-between;
   list-style-type: none;
   padding: 80px 50px 80px 50px;
-  border-radius: 18px;
+  /* border-radius: 18px;
   color: white;
   border-style: solid;
-  border-color: hsla(0, 0%, 100%, 0.5);
+  border-color: hsla(0, 0%, 100%, 0.5); */
 }
 
 #forecast-weather li {
@@ -140,7 +143,7 @@ footer {
     background-color: hsla(0, 0%, 50%, 0.5);
     color: white;
     border-style: solid;
-    border-color: hsla(0, 0%, 100%, 0.5);
+    /* border-color: hsla(0, 0%, 100%, 0.5); */
     padding: 5% 5% 0% 5%;
   }
 
@@ -165,7 +168,7 @@ footer {
     font-size: 16px;
     padding: 20px;
     width: 50%;
-    border-radius: 6px;
+    border-radius: 12.8px;
   }
 
   .submit-city {
@@ -176,7 +179,7 @@ footer {
     border: none;
     padding: 20px;
     line-height: 1;
-    border-radius: 6px;
+    border-radius: 12.8px;
   }
 
   .submit-city:hover {
