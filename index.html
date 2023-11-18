@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/weather.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
+
   <body>
     <section>
       <header>
@@ -17,7 +18,7 @@
             placeholder="Enter a city"
             required
           />
-          <input id="submit-city" type="submit" value="Search" />
+          <input id="submit-city" type="submit" value="search" />
         </form>
       </header>
       <main>
@@ -25,17 +26,18 @@
           <div class="info">
             <h1 id="current-city">PARIS</h1>
             <p class="current-details">
-              <span id="current-day">Saturday</span>
-              <span id="current-time">15:32</span>,
-              <em id="current-condition">moderate rain</em> <br />
+              <span class="current-date-time"
+                ><text id="current-date">APR 19 2022</text> <br /><text
+                  id="current-day-time"
+                  >Saturday 15:32</text
+                ></span
+              >, <em id="current-condition">moderate rain</em> <br />
               Humidity: <strong id="current-humidity">87%</strong>, Wind:
-              <strong id="current-wind">7.2km/h</strong>
+              <strong id="current-wind">7.2 km/h</strong>
             </p>
           </div>
           <div class="current-temperature">
-            <!-- <span class="current-temperature-icon" id="current-temperature-icon"
-              >☀️</span
-            > -->
+            <!-- <span id="current-temperature-icon">☀️</span> -->
             <span id="current-temperature-value"><strong>24</strong></span
             ><span id="current-temperature-unit">°C</span>
           </div>

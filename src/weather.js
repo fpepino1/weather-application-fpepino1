@@ -3,12 +3,60 @@ function refreshWeather(response) {
     "#current-temperature-value"
   );
   let currentTemperature = response.data.temperature.current;
-  let cityElement = document.querySelector("#current-city");
-  cityElement.innerHTML = response.data.city.toUpperCase();
+  let currentCityElement = document.querySelector("#current-city");
+  currentCityElement.innerHTML = response.data.city.toUpperCase();
   currentTemperatureElement.innerHTML = Math.round(currentTemperature);
 
-  let currentDay = document.querySelector("#current-day");
-  let current;
+  let currentHumidityElement = document.querySelector("#current-humidity");
+  currentHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  let currentWindElement = document.querySelector("#current-wind");
+  currentWindElement.innerHTML = `${response.data.wind.speed} km/h`;
+  let currentConditionElement = document.querySelector("#current-condition");
+  currentConditionElement.innerHTML = response.data.condition.description;
+
+  let currentDateElement = document.querySelector("#current-date");
+  let date = new Date(response.data.time * 1000);
+
+  let months = [
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAY",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OCT",
+    "NOV",
+    "DEC",
+  ];
+
+  let month = months[date.getMonth()];
+  let noDate = date.getDate();
+  let fullYear = date.getFullYear();
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  console.log(response);
+  currentDateElement.innerHTML = `${month} ${noDate} ${fullYear}`;
+  let currentDayTimeElement = document.querySelector("#current-day-time");
+  currentDayTimeElement.innerHTML = `${day} ${hour}:${minute}`;
+
+  // let currentTemperatureIconElement = document.querySelector(
+  //   "#current-temperature-icon"
+  // );
+  // currentTemperatureIconElement.innerHTML =
 }
 
 function searchCity(city) {
@@ -25,42 +73,3 @@ function handleSearchSubmit(event) {
 
 let searchCityFormElement = document.querySelector("#search-city-form");
 searchCityFormElement.addEventListener("submit", handleSearchSubmit);
-
-// let now = new Date();
-
-// let hour = now.getHours();
-// let minute = now.getMinutes();
-
-// let days = [
-//   "Sunday",
-//   "Monday",
-//   "Tuesday",
-//   "Wednesday",
-//   "Thursday",
-//   "Friday",
-//   "Saturday",
-// ];
-// let day = days[now.getDay()];
-
-// let months = [
-//   "January",
-//   "February",
-//   "March",
-//   "April",
-//   "May",
-//   "June",
-//   "July",
-//   "August",
-//   "September",
-//   "October",
-//   "November",
-//   "Decemeber",
-// ];
-
-// let month = months[now.getMonth()];
-// let fullYear = now.getFullYear();
-
-//search - provide an apiurl
-//change the temperature value unit and visual
-//change the city when you search
-//change the times

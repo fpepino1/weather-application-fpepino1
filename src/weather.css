@@ -17,11 +17,6 @@ section {
   border-color: hsla(0, 0%, 100%, 0.5);
 }
 
-.current header {
-  text-align: center;
-  padding-top: 5%;
-}
-
 footer {
   text-align: center;
   font-family: Helvetica;
@@ -38,11 +33,11 @@ footer {
 #search-city-input {
   background-color: hsla(0, 0%, 100%, 0.5);
   border: none;
-  color: white;
   font-size: 16px;
   padding: 20px;
   width: 75%;
   border-radius: 16.8px;
+  transition-duration: 0.1s;
 }
 
 #submit-city {
@@ -54,15 +49,17 @@ footer {
   padding: 20px;
   border-radius: 16.8px;
 }
+
 #submit-city:hover {
   color: #e8f0fe;
   background-color: hsla(0, 0%, 20%, 0.5);
+  transition-duration: 0.1s;
 }
 .current-weather {
   padding: 5% 5% 0% 5%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
 }
 
 .info {
@@ -74,25 +71,29 @@ footer {
   display: flex;
   font-size: 45px;
   padding-top: 5%;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", Times, serif;
 }
 
-/* #current-temperature-icon {
+#current-temperature-icon {
   padding-top: 9.5%;
   font-size: 65px;
-} */
+}
+
 #current-temperature-value {
   padding-top: 6%;
   font-size: 70px;
 }
+
 #current-temperature-unit {
   padding-top: 9.5%;
 }
+
 #current-city {
   font-size: 38px;
 }
 .current-details {
   font-size: 16px;
+  color: grey;
 }
 
 .current-details strong {
@@ -108,10 +109,6 @@ footer {
   justify-content: space-between;
   list-style-type: none;
   padding: 80px 50px 80px 50px;
-  /* border-radius: 18px;
-  color: white;
-  border-style: solid;
-  border-color: hsla(0, 0%, 100%, 0.5); */
 }
 
 #forecast-weather li {
@@ -120,6 +117,7 @@ footer {
   padding-left: 5%;
   padding-right: 2.5%;
 }
+
 #forecast-weather li strong {
   color: red;
 }
@@ -143,13 +141,7 @@ footer {
     background-color: hsla(0, 0%, 50%, 0.5);
     color: white;
     border-style: solid;
-    /* border-color: hsla(0, 0%, 100%, 0.5); */
     padding: 5% 5% 0% 5%;
-  }
-
-  header {
-    margin: 0 auto;
-    padding-top: 5%;
   }
 
   footer {
@@ -205,14 +197,15 @@ footer {
     font-size: 30px;
   }
 
-  /* #current-temperature-icon {
+  #current-temperature-icon {
     font-size: 30px;
     padding-top: 6%;
-  } */
+  }
 
   #current-temperature-value {
     font-size: 30px;
   }
+
   #current-temperature-unit {
     padding-top: 5%;
     font-size: 25px;
@@ -242,6 +235,7 @@ footer {
     list-style-type: none;
     padding-top: 8%;
   }
+
   #forecast-weather li strong {
     color: red;
   }
