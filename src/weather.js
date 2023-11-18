@@ -53,10 +53,6 @@ function refreshWeather(response) {
   let currentDayTimeElement = document.querySelector("#current-day-time");
   currentDayTimeElement.innerHTML = `${day} ${hour}:${minute}`;
 
-  // let currentTemperatureIconElement = document.querySelector(
-  //   "#current-temperature-icon"
-  // );
-  // currentTemperatureIconElement.innerHTML =
 }
 
 function searchCity(city) {
