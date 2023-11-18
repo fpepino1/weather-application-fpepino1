@@ -24,20 +24,18 @@ section {
 
 footer {
   text-align: center;
-  padding-top: 0px;
-  margin-top: 0px;
   font-family: Helvetica;
   color: white;
 }
 
-.current-city {
+#current-city {
   font-family: "Times New Roman", Times, serif;
 }
 
 #search-city-form {
   text-align: center;
 }
-.search-city-input {
+#search-city-input {
   background-color: hsla(0, 0%, 100%, 0.5);
   border: none;
   color: white;
@@ -47,7 +45,7 @@ footer {
   border-radius: 16.8px;
 }
 
-.submit-city {
+#submit-city {
   margin-left: 5px;
   font-size: 16px;
   background-color: hsla(0, 0%, 50%, 0.5);
@@ -56,7 +54,7 @@ footer {
   padding: 20px;
   border-radius: 16.8px;
 }
-.submit-city:hover {
+#submit-city:hover {
   color: #e8f0fe;
   background-color: hsla(0, 0%, 20%, 0.5);
 }
@@ -79,18 +77,18 @@ footer {
   font-family: "Times New Roman";
 }
 
-/* .current-temperature-icon {
+/* #current-temperature-icon {
   padding-top: 9.5%;
   font-size: 65px;
 } */
-.current-temperature-value {
+#current-temperature-value {
   padding-top: 6%;
   font-size: 70px;
 }
-.current-temperature-unit {
+#current-temperature-unit {
   padding-top: 9.5%;
 }
-.current-city {
+#current-city {
   font-size: 38px;
 }
 .current-details {
@@ -163,7 +161,7 @@ footer {
     color: white;
   }
 
-  .search-city-input {
+  #search-city-input {
     background-color: hsla(0, 0%, 100%, 0.5);
     border: none;
     color: white;
@@ -173,7 +171,7 @@ footer {
     border-radius: 12.8px;
   }
 
-  .submit-city {
+  #submit-city {
     margin-left: 5px;
     font-size: 16px;
     background-color: hsla(0, 0%, 50%, 0.5);
@@ -184,7 +182,7 @@ footer {
     border-radius: 12.8px;
   }
 
-  .submit-city:hover {
+  #submit-city:hover {
     color: #e8f0fe;
     background-color: hsla(0, 0%, 20%, 0.5);
   }
@@ -207,20 +205,20 @@ footer {
     font-size: 30px;
   }
 
-  /* .current-temperature-icon {
+  /* #current-temperature-icon {
     font-size: 30px;
     padding-top: 6%;
   } */
 
-  .current-temperature-value {
+  #current-temperature-value {
     font-size: 30px;
   }
-  .current-temperature-unit {
+  #current-temperature-unit {
     padding-top: 5%;
     font-size: 25px;
   }
 
-  .current-city {
+  #current-city {
     font-size: 30px;
   }
 

@@ -12,19 +12,18 @@
       <header>
         <form id="search-city-form">
           <input
-            class="search-city-input"
             id="search-city-input"
             type="search"
             placeholder="Enter a city"
             required
           />
-          <input class="submit-city" type="submit" value="Search" />
+          <input id="submit-city" type="submit" value="Search" />
         </form>
       </header>
       <main>
         <div class="current-weather">
           <div class="info">
-            <h1 class="current-city" id="current-city">PARIS</h1>
+            <h1 id="current-city">PARIS</h1>
             <p class="current-details">
               <span id="current-day">Saturday</span>
               <span id="current-time">15:32</span>,
@@ -37,15 +36,8 @@
             <!-- <span class="current-temperature-icon" id="current-temperature-icon"
               >☀️</span
             > -->
-            <span
-              class="current-temperature-value"
-              id="current-temperature-value"
-              ><strong>24</strong></span
-            ><span
-              class="current-temperature-unit"
-              id="current-temperature-unit"
-              >°C</span
-            >
+            <span id="current-temperature-value"><strong>24</strong></span
+            ><span id="current-temperature-unit">°C</span>
           </div>
         </div>
         <div id="forecast-weather">
